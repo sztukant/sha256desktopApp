@@ -53,9 +53,11 @@ public class HelloController {
                     new BufferedReader(new InputStreamReader(hashFile, StandardCharsets.UTF_8));
             StringBuilder sb = new StringBuilder();
             String line;
-            while ((line = br.readLine()) != null) {
+            while ((line = br.readLine()) != null) try {
                 sb.append(line, 0, 64);
                 hashFromFile = sb.toString();
+            } catch (IndexOutOfBoundsException exception){
+                check.setText("Incorrect file");
             }
             br.close();
             sourceFile.close();
