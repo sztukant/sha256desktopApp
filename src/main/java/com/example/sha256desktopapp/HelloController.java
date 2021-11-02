@@ -1,6 +1,7 @@
 package com.example.sha256desktopapp;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -27,13 +28,13 @@ public class HelloController {
     File checksum;
 
     @FXML
-    private TextField filePathField;
+    private Label filePathField;
 
     @FXML
-    private TextField checksumPathField;
+    private Label checksumPathField;
 
     @FXML
-    private TextField check;
+    private Label check;
 
 
     @FXML
@@ -65,6 +66,7 @@ public class HelloController {
             if (flag){
                 check.setText("Correct checksum");
             } else {
+
                 check.setText("Incorrect checksum");
             }
 

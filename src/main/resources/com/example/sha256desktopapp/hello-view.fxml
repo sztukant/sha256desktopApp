@@ -8,10 +8,10 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <TextField fx:id="filePathField" />
+   <Label fx:id="filePathField" />
     <Button onAction="#onAddFileButtonClick" text="Add file" />
-   <TextField fx:id="checksumPathField" />
+   <Label fx:id="checksumPathField" />
  <Button onAction="#onAddChecksumButtonClick" text="Add checksum file" />
     <Button onAction="#onCheckButtonClick" text="CHECK" />
-   <TextField  fx:id="check" />
+   <Label fx:id="check" />
 </VBox>
