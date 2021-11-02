@@ -2,7 +2,6 @@ package com.example.sha256desktopapp;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
@@ -35,7 +34,6 @@ public class HelloController {
 
     @FXML
     private Label check;
-
 
     @FXML
     protected void onCheckButtonClick() throws IOException, NoSuchAlgorithmException {
